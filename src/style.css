@@ -10,8 +10,15 @@ html::-webkit-scrollbar {
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: "Raleway", Arial, sans-serif;
     font-size: 16px;
@@ -19,7 +26,11 @@ body {
 }
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 80vw;
     margin: 50px 0;
@@ -71,25 +82,45 @@ li:before {
 }
 
 .table-main, .table-second, .table-third {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
 }
 
 .table, .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .table .table-main, .table-second, .table-third {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 
 .table-main-name, .table-second-name, .table-third-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    display: -webkit-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: auto;
     padding: 10px;
@@ -101,6 +132,7 @@ li:before {
     background-color: rgba(75, 208, 160, 0.2);
     border: none;
     cursor: pointer;
+    -webkit-animation: scale 2s infinite;
     animation: scale 2s infinite;
 }
 
@@ -130,22 +162,47 @@ li:before {
 }
 
 .list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 
 .container, .table {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+}
+
+@-webkit-keyframes scale {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+    50% {
+        -webkit-transform: scale(0.96);
+        transform: scale(0.96);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
 }
 
 @keyframes scale {
     0% {
+        -webkit-transform: none;
         transform: none;
     }
     50% {
+        -webkit-transform: scale(0.96);
         transform: scale(0.96);
     }
     100% {
+        -webkit-transform: none;
         transform: none;
     }
 }
@@ -153,6 +210,7 @@ li:before {
     display: none;
 }
 .no-animation {
+    -webkit-animation: none;
     animation: none;
 }
 .button {
@@ -164,8 +222,11 @@ li:before {
     background-color: #4bd0a0;
     color: white;
     padding: 10px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-weight: 600;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
     text-align: center;
     cursor: pointer;

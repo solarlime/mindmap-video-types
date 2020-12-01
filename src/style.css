@@ -119,7 +119,6 @@ li:before {
 
 .table-third-name {
     width: calc(35vw - 52px);
-    height: max-content;
     max-width: 600px;
 }
 

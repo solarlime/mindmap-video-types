@@ -91,7 +91,7 @@ li:before {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    height: max-content;
+    height: available;
     padding: 10px;
     border: 1px solid #4bd0a0;
     margin: 3px 0 3px 3px;

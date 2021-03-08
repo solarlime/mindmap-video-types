@@ -73,7 +73,7 @@ li:before {
 .table-main, .table-second, .table-third {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .table, .container {

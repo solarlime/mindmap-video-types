@@ -36,27 +36,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|ico)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              esModule: false,
-              name: 'img/[name].[ext]',
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(txt)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              esModule: false,
-              name: '[name].[ext]',
-            },
-          },
-        ],
+        type: 'asset/resource',
       },
     ],
   },

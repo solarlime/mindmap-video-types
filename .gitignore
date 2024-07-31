@@ -108,3 +108,11 @@ dist
 # WebStorm files
 .idea
 
+# Yarn 2 files
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
